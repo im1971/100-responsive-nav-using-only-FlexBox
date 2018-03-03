@@ -1,0 +1,211 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #c7d1d8;
+}
+
+li{
+    list-style-type: none;
+}
+
+body{
+    background: mediumpurple;
+}
+
+
+/*navigation style*/
+#_r-header{
+    background: #283e4a;
+    /*display: flex;*/
+    padding: 0 30px;
+    min-height: 52px;
+}
+
+
+/*logo*/
+
+a._r-main-logo{
+    background: url(img/rzs.png) center no-repeat;
+    background-size: 100%;
+}
+
+._r-brand-logo ._r-main-logo{
+    text-indent: -100000px;
+    line-height: 36px;
+    display: block;
+}
+
+._r-brand-logo {
+    flex: 1 1 0;
+}
+
+._r-brand-logo ul{
+    display: flex;
+    justify-content: center;
+}
+
+#_r-main-nav{
+    background: #283e4a;
+    /*display: flex;*/
+    padding: 7px 0;
+    /*margin: auto 0;*/
+    /*width: 100%;*/
+}
+
+#_r-main-nav ._r-left-menu-item{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+#_r-main-nav ._r-menu-item li{
+    flex: 0 0 100px;
+    padding-bottom: 15px;
+}
+
+#_r-main-nav ._r-menu-item li a{
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    line-height: 17px;
+
+}
+
+#_r-main-nav ._r-menu-item li a:hover{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+
+}
+
+#_r-main-nav ._r-menu-item i{
+    font-size: 18px;
+
+}
+
+/*form input*/
+
+._r-search{
+    padding: 10px 0;
+}
+._r-search input{
+    min-height: 30px;
+    min-width: 100%;
+    border: 0;
+    margin: auto;
+}
+
+/*button*/
+._r-btn{
+    position: absolute;
+    top: 0;
+    right: -56px;
+    min-height: 38px;
+    width: 48px;
+    border-radius: 0 5px 5px 0;
+    border: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+._r-btn i{
+    color: #0084bf;
+}
+
+/*right menu*/
+
+@media only screen and (min-width : 768px) {
+    ._r-brand-logo ._r-main-logo{
+        line-height: 55px;
+        width: 55px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 992px) {
+    #_r-main-nav{
+        display: flex;
+        /*padding: 7px 30px;*/
+        margin: auto 0;
+        width: 100%;
+    }
+
+    #_r-main-nav ._r-menu-item{
+        display: flex;
+        /*flex-wrap: wrap;*/
+        flex: 6 1 0;
+        justify-content: flex-end;
+        /*padding: 0 30px;*/
+    }
+
+    #_r-main-nav ._r-left-menu-item{
+        border-right: 1px solid #fff;
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    #_r-main-nav ._r-menu-item li{
+        flex: 0 0 75px;
+        padding-bottom: 0;
+    }
+
+    #_r-main-nav ._r-right-menu-item{
+        flex: 2 1 0;
+    }
+
+    #_r-main-nav ._r-right-menu-item li{
+        flex: 0 0 72px;
+    }
+
+    #_r-main-nav ._r-right-menu-item .fa-th{
+        font-size: 35px;
+    }
+
+    /*logo*/
+    ._r-brand-logo ._r-main-logo{
+        line-height: 36px;
+        width: 36px;
+    }
+
+    /*form input*/
+
+    ._r-search{
+        display: flex;
+        position: relative;
+        flex: 3 1 0;
+        padding: 0;
+    }
+
+    /*._r-search input{*/
+        /*min-height: 30px;*/
+    /*}*/
+}
+
+@media screen and (min-width: 992px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
