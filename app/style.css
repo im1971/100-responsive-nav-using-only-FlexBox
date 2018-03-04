@@ -13,10 +13,6 @@ li{
     list-style-type: none;
 }
 
-body{
-    background: mediumpurple;
-}
-
 
 /*navigation style*/
 #_r-header{
@@ -49,25 +45,36 @@ a._r-main-logo{
     justify-content: center;
 }
 
+/*navigation*/
+
 #_r-main-nav{
     background: #283e4a;
-    /*display: flex;*/
     padding: 7px 0;
-    /*margin: auto 0;*/
-    /*width: 100%;*/
 }
 
 #_r-main-nav ._r-left-menu-item{
-    display: flex;
+    border-top: 1px solid #fff;
+    margin-top: 10px;
+
+}
+
+._r-menu-item{
     justify-content: center;
     flex-wrap: wrap;
     border-bottom: 1px solid #eee;
-    margin-bottom: 15px;
+}
+
+._r-menu-item{
+    display: none;
+}
+
+._r-show-mobile{
+    display: flex;
 }
 
 #_r-main-nav ._r-menu-item li{
     flex: 0 0 100px;
-    padding-bottom: 15px;
+    padding: 15px 0;
 }
 
 #_r-main-nav ._r-menu-item li a{
@@ -89,9 +96,23 @@ a._r-main-logo{
 
 }
 
+/*brand logo */
+#_r-header ._r-brand-logo-wrap{
+    display: flex;
+}
+
+#_r-header ._r-brand-logo-wrap ._r-mobile-menu{
+    flex: 1 1 0;
+    margin: auto;
+    font-size: 30px;
+    color: #fff;
+}
+
+
 /*form input*/
 
 ._r-search{
+    display: none;
     padding: 10px 0;
 }
 ._r-search input{
@@ -118,45 +139,73 @@ a._r-main-logo{
     color: #0084bf;
 }
 
-/*right menu*/
+/*jBox css*/
 
-@media only screen and (min-width : 768px) {
-    ._r-brand-logo ._r-main-logo{
-        line-height: 55px;
-        width: 55px;
-    }
+.jBox-Modal .jBox-title{
+    background: darkgreen !important;
+    color: #fff;
+    font-weight: 999;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 !important;
+    border-radius: 0 !important;
 }
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 992px) {
+.jBox-closeButton path{
+    fill: #fff !important;
+}
+
+.jBox-Modal .jBox-content{
+    text-align: justify;
+    background: #111;
+    opacity: .6;
+    color: #fff;
+
+}
+
+
+.jBox-container{
+    background: url(img/histry.jpg) center no-repeat !important;
+    /*background-size: 100% !important;*/
+}
+
+
+
+@media only screen and (min-width : 768px) {
+    /*._r-brand-logo ._r-main-logo{*/
+        /*line-height: 55px;*/
+        /*width: 55px;*/
+    /*}*/
     #_r-main-nav{
         display: flex;
-        /*padding: 7px 30px;*/
         margin: auto 0;
         width: 100%;
     }
 
     #_r-main-nav ._r-menu-item{
         display: flex;
-        /*flex-wrap: wrap;*/
         flex: 6 1 0;
         justify-content: flex-end;
-        /*padding: 0 30px;*/
     }
 
     #_r-main-nav ._r-left-menu-item{
         border-right: 1px solid #fff;
         border-bottom: none;
+        border-top: none ;
         margin-bottom: 0;
+        margin-top: 0;
+
     }
 
     #_r-main-nav ._r-menu-item li{
         flex: 0 0 75px;
-        padding-bottom: 0;
+        padding: 0;
     }
 
     #_r-main-nav ._r-right-menu-item{
         flex: 2 1 0;
+        justify-content: flex-start;
+        border-bottom: none;
     }
 
     #_r-main-nav ._r-right-menu-item li{
@@ -165,6 +214,12 @@ a._r-main-logo{
 
     #_r-main-nav ._r-right-menu-item .fa-th{
         font-size: 35px;
+    }
+
+    /*mobile menu*/
+
+    #_r-header ._r-brand-logo-wrap ._r-mobile-menu{
+        display: none;
     }
 
     /*logo*/
@@ -181,15 +236,9 @@ a._r-main-logo{
         flex: 3 1 0;
         padding: 0;
     }
-
-    /*._r-search input{*/
-        /*min-height: 30px;*/
-    /*}*/
 }
 
-@media screen and (min-width: 992px){
 
-}
 
 
 
