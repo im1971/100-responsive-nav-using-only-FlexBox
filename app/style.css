@@ -217,6 +217,10 @@ a._r-main-logo{
         display: none;
     }
 
+    #_r-header ._r-brand-logo-wrap ._r-mobile-menu-cross{
+        display: none;
+    }
+
     /*logo*/
     ._r-brand-logo ._r-main-logo{
         line-height: 36px;
