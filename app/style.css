@@ -17,14 +17,12 @@ li{
 /*navigation style*/
 #_r-header{
     background: #283e4a;
-    /*display: flex;*/
     padding: 0 30px;
     min-height: 52px;
 }
 
 
 /*logo*/
-
 a._r-main-logo{
     background: url(img/rzs.png) center no-repeat;
     background-size: 100%;
@@ -42,11 +40,9 @@ a._r-main-logo{
 
 ._r-brand-logo ul{
     display: flex;
-    justify-content: center;
 }
 
 /*navigation*/
-
 #_r-main-nav{
     background: #283e4a;
     padding: 7px 0;
@@ -82,35 +78,41 @@ a._r-main-logo{
     display: block;
     text-align: center;
     line-height: 17px;
-
 }
 
 #_r-main-nav ._r-menu-item li a:hover{
     color: #fff;
     border-bottom: 1px solid #fff;
-
 }
 
 #_r-main-nav ._r-menu-item i{
     font-size: 18px;
-
 }
 
 /*brand logo */
 #_r-header ._r-brand-logo-wrap{
     display: flex;
+    justify-content: space-between;
 }
 
 #_r-header ._r-brand-logo-wrap ._r-mobile-menu{
-    flex: 1 1 0;
-    margin: auto;
+    margin: auto 0;
     font-size: 30px;
     color: #fff;
 }
 
+._r-mobile-menu-cross{
+    display: none;
+    margin: auto 0;
+    font-size: 30px;
+    color: #fff;
+}
+
+.abc{
+    display: none;
+}
 
 /*form input*/
-
 ._r-search{
     display: none;
     padding: 10px 0;
@@ -140,7 +142,6 @@ a._r-main-logo{
 }
 
 /*jBox css*/
-
 .jBox-Modal .jBox-title{
     background: darkgreen !important;
     color: #fff;
@@ -163,7 +164,6 @@ a._r-main-logo{
 
 }
 
-
 .jBox-container{
     background: url(img/histry.jpg) center no-repeat !important;
     /*background-size: 100% !important;*/
@@ -172,10 +172,7 @@ a._r-main-logo{
 
 
 @media only screen and (min-width : 768px) {
-    /*._r-brand-logo ._r-main-logo{*/
-        /*line-height: 55px;*/
-        /*width: 55px;*/
-    /*}*/
+
     #_r-main-nav{
         display: flex;
         margin: auto 0;
@@ -194,7 +191,6 @@ a._r-main-logo{
         border-top: none ;
         margin-bottom: 0;
         margin-top: 0;
-
     }
 
     #_r-main-nav ._r-menu-item li{
@@ -217,7 +213,6 @@ a._r-main-logo{
     }
 
     /*mobile menu*/
-
     #_r-header ._r-brand-logo-wrap ._r-mobile-menu{
         display: none;
     }
@@ -229,7 +224,6 @@ a._r-main-logo{
     }
 
     /*form input*/
-
     ._r-search{
         display: flex;
         position: relative;
